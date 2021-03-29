@@ -24,7 +24,7 @@ class Gyroscuter extends Transport {
     }
   }
   int priseWheels(){
-    int prise=this.wheels * 1000;
+    int prise=this.wheels * 300;
     return prise;
   }
 

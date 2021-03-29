@@ -24,7 +24,7 @@ class Motorcycle extends Transport {
     }
   }
   int priseWheels(){
-    int prise=this.wheels * 1000;
+    int prise=this.wheels * 1500;
     return prise;
   }
 

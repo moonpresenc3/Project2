@@ -24,7 +24,7 @@ class Scooter extends Transport {
     }
   }
   int priseWheels(){
-    int prise=this.wheels * 1000;
+    int prise=this.wheels * 100;
     return prise;
   }
 
