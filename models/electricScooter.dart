@@ -1,11 +1,31 @@
-class Car {
-  double maxSpeed;
-  int wheels;
-  double enginePower;
-  bool engine;
+import 'transport.dart';
 
-  Car({this.maxSpeed=35, this.wheels=2, this.enginePower=49, this.engine=true}){
+class ElectricScooter extends Transport {
+  ElectricScooter({required double maxSpeed,required int wheels,required int enginePower,required bool engine}):
+        super(maxSpeed,wheels,enginePower,engine){
 
-}
+  }
+  double calculateTime(double v){
+    double t=(maxSpeed / v);
+    return t;
+  }
+  bool needDrivingLicense(){
+    if(this.engine==true && this.enginePower>50){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  bool tiredLegs(){
+    if(this.engine == false){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  int priseWheels(){
+    int prise=this.wheels * 1000;
+    return prise;
+  }
 
 }
